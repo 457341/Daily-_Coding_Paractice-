@@ -1,0 +1,4 @@
+# Note : We can't assign the value to a list like below. We can use append()
+hello = []
+hello[0] = 'H'
+print(hello)
