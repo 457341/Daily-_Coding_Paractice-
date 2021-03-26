@@ -5,3 +5,13 @@ surname = "Hussain"
 country = "Pakistan"
 print("Name: {}\nSurname: {}\nCountry: {}".format(name,surname,country))
 
+
+# the future value of a specified principal amount, rate of interest, and a number of years
+
+# Formula:  FV = P(1 + rt).
+def calculate_future_value(p,r,t):
+    print("The future value is: ",p*(1 + r*t))
+
+calculate_future_value(10000,3.5,7)
+# est Data : amt = 10000, int = 3.5, years = 7
+# Expected Output : 12722.79
