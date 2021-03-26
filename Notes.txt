@@ -26,3 +26,8 @@ import math
 print(math.pow.__doc__) 
 print(print.__doc__)
 print(input.__doc__)
+
+
+# How to use max() method
+max(list) # it finds the max element in the list or set 
+max(list,default=0)# if there is no such thing then the max will be default
