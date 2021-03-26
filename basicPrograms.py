@@ -15,3 +15,10 @@ def calculate_future_value(p,r,t):
 calculate_future_value(10000,3.5,7)
 # est Data : amt = 10000, int = 3.5, years = 7
 # Expected Output : 12722.79
+
+# Write a Python program to check whether a file exists.
+
+import os
+file = open('Notes.txt','r')
+print(os.path.isfile('Notes.txt'))
+print(os.path.isfile('exercise.txt'))
