@@ -35,3 +35,7 @@ print(struct.calcsize("P") * 8)
 n = "246.2458"
 print(float(n))
 print(int(float(n)))
+
+# Write a Python program to print without newline or space
+print("Manzoor Hussain",end='')
+print("From Pakistan")
