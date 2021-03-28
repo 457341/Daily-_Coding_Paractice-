@@ -30,3 +30,8 @@ print(os.getcwd)
 # For 32 bit it will return 32 and for 64 bit it will return 64
 import struct
 print(struct.calcsize("P") * 8)
+
+# Write a Python program to parse a string to Float or Integer.
+n = "246.2458"
+print(float(n))
+print(int(float(n)))
