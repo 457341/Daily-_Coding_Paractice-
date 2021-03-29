@@ -53,3 +53,11 @@ def sum_two_num(n1,n2):
 cProfile.run('fun()')
 cProfile.run('print_name("Manzoor","Hussain","Pakistan")')
 cProfile.run('sum_two_num(2,3)')
+
+----------------------
+Question: How to add multiple values to a list
+Answer: We can add multiple values in three ways like in following shown.
+arr = []
+    arr.extend({n1,n2,n3})
+    arr.extend((0,10,31))
+    arr.extend([15,20,7])
