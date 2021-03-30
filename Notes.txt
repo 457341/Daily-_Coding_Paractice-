@@ -61,3 +61,12 @@ arr = []
     arr.extend({n1,n2,n3})
     arr.extend((0,10,31))
     arr.extend([15,20,7])
+
+
+-----------------
+usage of n values as  arguments : https://note.nkmk.me/en/python-args-kwargs-usage/
+
+------------------
+Formated litearls string in python
+print(f'Ascii value of {i} is: {ord(i)}') # it is a different usage of pirnt function
+    # print('Ascii value of {} is: {}'.format(i,ord(i)))
