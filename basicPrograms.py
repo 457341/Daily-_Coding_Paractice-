@@ -65,3 +65,11 @@ print("\nOriginal Color: ",color)
 del color[0]
 print("After removing the first color: ",color)
 print()
+# Write a Python program to input a number, if it is not a number generate an error message.
+
+while True:
+    try:
+        a = int(input("Enter number: "))
+        break
+    except ValueError:
+        print("This is not a number, Please try again........")
