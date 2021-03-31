@@ -48,3 +48,12 @@ x = int(input("Enter x: "))
 y = int(input("Enter y: "))
 print(f"{x} + {y} = {x+y}")
 
+# swapping two numbers
+def swap(x,y):
+    print("Previsus valuees are ",x,y)
+    temp = x
+    x = y
+    y = temp
+    print("New valuees are ",x,y)
+    
+swap(x,y)
