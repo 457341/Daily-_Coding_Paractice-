@@ -74,7 +74,7 @@ while True:
     except ValueError:
         print("This is not a number, Please try again........")
 
- Write a Python program to filter the positive numbers from a list.
+#  Write a Python program to filter the positive numbers from a list.
 
 import random 
 def generate_random_num():
@@ -98,3 +98,11 @@ print(filter_postive_num(generate_random_num()))
 import math
 print("The product is: ",math.prod(filter_postive_num(generate_random_num())))
 # print(import math.prod([1,2]))
+
+
+
+
+#  Write a Python program to sum of all counts in a collections.
+import collections
+numbers = generate_random_num()
+print("There are ",sum(collections.Counter(numbers).values()),"elements in the list")
