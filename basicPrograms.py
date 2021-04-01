@@ -106,3 +106,9 @@ print("The product is: ",math.prod(filter_postive_num(generate_random_num())))
 import collections
 numbers = generate_random_num()
 print("There are ",sum(collections.Counter(numbers).values()),"elements in the list")
+
+
+
+# Write a Python program to check whether lowercase letters exist in a string
+str1 = 'A8238i823acdeOUEI'
+print(any(c.islower() for c in str1))
