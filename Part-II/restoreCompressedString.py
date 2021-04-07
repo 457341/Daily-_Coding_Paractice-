@@ -26,7 +26,10 @@ def restore_string(str):
             compressed_string[j] = ''
             compressed_string[j+1] = compressed_string[j+2]*(int(compressed_string[j+1]  ) -1)
         j += 1
-    listToStr = ' '.join([str(elem) for elem in compressed_string]) 
+    # listToStr = ' '.join([str(elem) for elem in compressed_string]) 
+    listToStr = ''
+    for i in compressed_string:
+        listToStr += i
     print(compressed_string)
     print(listToStr)
 restore_string(str)
