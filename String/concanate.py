@@ -7,3 +7,20 @@ def concat_string(string):
     result = first_two + last_two
     print(f"The result is: {result}")
 concat_string("Manzoor") # result should be: Maor
+
+
+# Write a Python program to get a string from a given string where all occurrences of its
+#  first char have been changed to '$', except the first char itself. 
+# Sample String : 'restart'
+# Expected Result : 'resta$t'
+
+def change_str(string):
+    original_str = string
+    lst = list(string)
+    first_chr = string[0]
+    for i in range(1,len(lst)):
+        if lst[i] == first_chr:
+            lst[i] = "$"
+    print(f"The result of '{original_str}' is: {''.join(lst)}")
+change_str("restart")
+change_str("successful")
