@@ -36,3 +36,31 @@ def get_single_string(strings):
     print(strings)
 
 get_single_string(strings)
+
+#  Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged. Go to the editor
+# Sample String : 'abc'
+# Expected Result : 'abcing'
+# Sample String : 'string'
+# Expected Result : 'stringly'
+
+# print('string'.endswith('ing'))
+def add_ing_or_ly(string):
+    intitial_str = string
+    if len(string) >= 3:
+        if string.endswith("ing"):
+            string = string+ "ly"
+        else:
+            string = string + "ing"
+        print(f"The result of '{intitial_str}' is: {string}")
+    else:
+        print("The length of string must be atleast 3. Try again")
+        while(True):
+            string = input("Enter string with aleast length of 3: ")
+            if len(string) >=3:
+                add_ing_or_ly(string)
+                break
+
+
+add_ing_or_ly("abc")
+add_ing_or_ly("string")
+add_ing_or_ly("ab")
