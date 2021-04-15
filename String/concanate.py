@@ -24,3 +24,15 @@ def change_str(string):
     print(f"The result of '{original_str}' is: {''.join(lst)}")
 change_str("restart")
 change_str("successful")
+
+# Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string. Go to the editor
+# Sample String : 'abc', 'xyz'
+# Expected Result : 'xyc abz'
+def get_single_string(strings):
+    strings = strings.split(',')
+    # print(strings)
+    # strings = ''.join(strings)
+    strings = strings[-1] + ' ' + strings[0]
+    print(strings)
+
+get_single_string(strings)
