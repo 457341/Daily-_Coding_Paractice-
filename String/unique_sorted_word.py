@@ -20,12 +20,27 @@ def sort_unique_words1(string):
     unique_words = list(unique_words)
     print(' '.join(sorted(unique_words)))
 
+#Funtion 2
+def sort_unique_words2(string):
+    string = string.split(",")
+    print("Original String: ",end='')
+    print(string)
+    str_lst = []
+    for i in string:
+        # print(string.count(i))
+        if str_lst.count(i) == 0:
+            str_lst.append(i)
+
+    print(' '.join(sorted(str_lst)))
+
+
 
 
 # str = input("Enter words: ")
 str = "red,white,black,red,green,black"
 print("Using Funtion 1: ")
 sort_unique_words1(str)
-
+print("Using Funtion 2: ")
+sort_unique_words2(str)
 
 
