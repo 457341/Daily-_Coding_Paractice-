@@ -34,7 +34,10 @@ def sort_unique_words2(string):
     print(' '.join(sorted(str_lst)))
 
 
-
+# Funtion 3
+def sort_unique_words3(string):
+    words = [word for word in string.split(",")]
+    print(",".join(sorted(list(set(words)))))
 
 # str = input("Enter words: ")
 str = "red,white,black,red,green,black"
@@ -42,5 +45,6 @@ print("Using Funtion 1: ")
 sort_unique_words1(str)
 print("Using Funtion 2: ")
 sort_unique_words2(str)
-
+print("Using Funtion 3: ")
+sort_unique_words3(str)
 
