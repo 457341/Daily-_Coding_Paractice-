@@ -70,3 +70,9 @@ usage of n values as  arguments : https://note.nkmk.me/en/python-args-kwargs-usa
 Formated litearls string in python
 print(f'Ascii value of {i} is: {ord(i)}') # it is a different usage of pirnt function
     # print('Ascii value of {} is: {}'.format(i,ord(i)))
+
+----------------------------
+                            # ! Equivalent
+# i for i in string if in i vowels:         for i in string:
+#                                             if i in vowels:
+#                                                 print(i)
