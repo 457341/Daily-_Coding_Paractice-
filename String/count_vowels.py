@@ -8,3 +8,10 @@ def countVowels(string):
     print(count)
 
 countVowels("manzoor")
+
+# ! Solution 2
+def count_vowlels2(string):
+    vowels = "aeiouAEIOU"
+    print(len([i for i in string if i in vowels]))
+    print([i for i in string if i in vowels])
+count_vowlels2("manzoor")
