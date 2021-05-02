@@ -76,3 +76,9 @@ print(f'Ascii value of {i} is: {ord(i)}') # it is a different usage of pirnt fun
 # i for i in string if in i vowels:         for i in string:
 #                                             if i in vowels:
 #                                                 print(i)
+
+
+---------------------------------------------------------------------------------------------
+list2 = ['p','q']
+list = ['{} + {}'.format(x, y) for y in range(5) for x in list2]
+print(list)
