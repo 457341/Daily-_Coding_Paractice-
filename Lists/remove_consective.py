@@ -18,10 +18,13 @@
 def remove_duplicate(list):
     new_list = []
     # print(len(list))
-    for i in range(len(list)):
+    for i in range(len(list)+2):
         if  i<len(list)-1:
             if list[i] == list[i+1]:
-                new_list.append(list[i])            
+                continue
+            else:
+                new_list.append(list[i])
+
     print(new_list)#[0, 4, 6, 6, 4]
 
 
