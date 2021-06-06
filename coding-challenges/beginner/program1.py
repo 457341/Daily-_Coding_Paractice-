@@ -48,3 +48,25 @@ def find_square(n):
         squares[i] = i**2
     return squares
 print(find_square(8))
+
+
+# ! Question 4
+def tuple_and_list_generator():
+    pass
+
+
+nums_tuple = ()
+nums_list = []
+# raw_num = input('Enter numbers: ')
+# numberss = list(map(int, raw_num.split(',')))
+nums_list = list(map(int,input("Enter numbers: ").split(",")))
+nums_tuple = tuple(nums_list)
+print(nums_list,nums_tuple)
+class Foo:
+    def test(self):
+        print("This is test method")
+    def get_string(self,str):
+        print(str)
+f = Foo()
+f.test()
+f.get_string("manzoor Hussain")
