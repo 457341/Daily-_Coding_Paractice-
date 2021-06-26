@@ -13,30 +13,41 @@
 # Passwords that match the criteria are to be printed, each separated by a comma.
 # Example
 # If the following passwords are given as input to the program:
-# ABd1234@1,a F1#,2w3E*,2We3345
+# ABd1234@1,a F1#,2w3E*,2We3345,Manzoor#1
 # Then, the output of the program should be:
 # ABd1234@1
 # password = (input("Enter identity number: "))
-name = "Manzoor#1"
+names = input("Enter passwords: ").split(',')
+# print(names)
+# name = "Manzoor#1"
 # if 
-lower = ''
-upper = ''
-special = ''
-digit = ''
-for char in name:
-    if char.isupper() :
-        upper += "U"
-    if char.islower():
-        lower += 'L'
-    if char in "#$@":
-        special += 'S'
-    if char.isdigit():
-        digit += 'D'
+for name in names:
+    # print(name)
+    lower = ''
+    upper = ''
+    special = ''
+    digit = ''
+    for char in name:
+        if char.isupper() :
+            upper += "U"
+        if char.islower():
+            lower += 'L'
+        if char in "#$@":
+            special += 'S'
+        if char.isdigit():
+            digit += 'D'
 
-result = lower + upper + special + digit
-# print(result)
-if "LUSD" in result and  len(result) >= 6 and len(result) <=12:
-    print("yes")
-else:
-    print("no")
+    result = lower + upper + special + digit
+    # print(result)
+    # print(result)
+    if "L" in result and  "U" in result and  "S" in result and "D" in result and len(result) >= 6 and len(result) <=12:
+    # if set("LUSD") in result and len(result) >= 6 and len(result) <=12:
+        print("yes")
+    else:
+        print("no")
+    result = ''
+    lower = ''
+    upper = ''
+    special = ''
+    digit = ''
 # print("m" in name)
