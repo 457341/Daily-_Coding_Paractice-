@@ -1,0 +1,5 @@
+method: Function in OOP is called method.
+object: Instance of class
+class: blue print or design
+attribute: variables in class
+behavior: Functions in class.
