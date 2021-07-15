@@ -16,3 +16,7 @@ print (total_number)
 # Question 2 - Counting capital letters
 # Using Python, write code that will read a file and return the number of capital letters.
 # Once you have your initial piece of code, see if you can condense into a one-liner.
+f = open("D:\Python (Don't break the chain)\Interview_Question\info.txt", 'r')
+print(f.readlines())
+for line in f:
+    print(line)
