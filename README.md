@@ -10,3 +10,7 @@ I code daily to improve my programming skills. Currently I use Python programmim
 - coding challenges
 - Json
 - Modules 
+- OOP
+- File Handling 
+- OpenCV
+- Recursion
