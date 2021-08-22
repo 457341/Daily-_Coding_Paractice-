@@ -80,3 +80,33 @@
 #     print("number is in different range")
 
 #? Question
+# Write a Python program to count the number 4 in a given list.
+#! Answer:
+# lst = [1,24,35,6,4,0,4]
+# count_number4 = 0
+# for i in lst:
+#     if i == 4:
+#         count_number4 +=1
+# print(count_number4)
+#? Question
+# Write a Python program to test whether a passed letter is a vowel or not.
+#! Answer
+# def is_vowel(letter):
+#     all_vowels= "aeiouAEIOU"
+#     if letter in all_vowels:
+#         print(letter, "is vowel")
+#     else:
+#         print(letter, "is not vowel")
+# is_vowel("M")
+# is_vowel("A")
+#? Question
+# Write a Python program to check whether a specified value is contained in a group of values. Go to the editor
+# Test Data :
+# 3 -> [1, 5, 8, 3] : True
+# -1 -> [1, 5, 8, 3] : False
+#! Answer
+# def is_contained(lst,value):
+#     if value in lst: return "Yes"
+#     else: return "No"
+# print(is_contained([1,5,8,3],3))
+# print(is_contained([1,5,8,3],-1))
