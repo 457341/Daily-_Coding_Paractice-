@@ -110,3 +110,9 @@
 #     else: return "No"
 # print(is_contained([1,5,8,3],3))
 # print(is_contained([1,5,8,3],-1))
+#? Question
+# Write a Python program to create a histogram from a given list of integers.
+#! Answer
+def make_histogram(lst):
+    print(lst*2)
+make_histogram(3)
