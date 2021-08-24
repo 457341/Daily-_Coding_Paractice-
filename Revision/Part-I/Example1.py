@@ -113,6 +113,26 @@
 #? Question
 # Write a Python program to create a histogram from a given list of integers.
 #! Answer
-def make_histogram(lst):
-    print(lst*2)
-make_histogram(3)
+# def make_histogram(lst):
+#     for i in lst:
+#         print("*"*i)
+# make_histogram([1,2,3,4,5,1,2,3,4])
+# make_histogram([1,2,3,4,5,4,3,2,1])
+#? Question
+# Write a Python program to concatenate all elements in a list into a string and return it
+#! Answer
+# def concatenate_all(lst):
+#     all_elements = ''
+#     for i in lst:
+#         all_elements += str(i)
+#     return all_elements
+# print(concatenate_all([1,2,3,4]))
+#? Question
+# Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5
+#! Answer
+def method(int1, int2):
+    if int1 == int2 or abs(int1 - int2) == 5 or abs(int1 + int2) ==5:
+        return True
+    else:
+        return False
+print(method(2,3))
