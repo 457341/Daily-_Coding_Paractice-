@@ -130,9 +130,23 @@
 #? Question
 # Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5
 #! Answer
-def method(int1, int2):
-    if int1 == int2 or abs(int1 - int2) == 5 or abs(int1 + int2) ==5:
-        return True
-    else:
-        return False
-print(method(2,3))
+# def method(int1, int2):
+#     if int1 == int2 or abs(int1 - int2) == 5 or abs(int1 + int2) ==5:
+#         return True
+#     else:
+#         return False
+# print(method(2,3))
+#? Question
+#Write a Python program to calculate the sum of the digits in an integer.
+# #! Answer
+# def foo(int1):
+#     new_int = str(int1)
+#     total_str = ''
+#     for i in new_int:
+#? Question
+# Calculate body mass index
+#! Answer
+height = float(input("Input your height in Feet: "))
+weight = float(input("Input your weight in Kilogram: "))
+print("Your body mass index is: ", round(weight / (height * height), 2))
+
