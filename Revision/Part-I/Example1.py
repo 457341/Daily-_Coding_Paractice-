@@ -137,16 +137,26 @@
 #         return False
 # print(method(2,3))
 #? Question
-#Write a Python program to calculate the sum of the digits in an integer.
-# #! Answer
-# def foo(int1):
-#     new_int = str(int1)
-#     total_str = ''
-#     for i in new_int:
-#? Question
 # Calculate body mass index
 #! Answer
-height = float(input("Input your height in Feet: "))
-weight = float(input("Input your weight in Kilogram: "))
-print("Your body mass index is: ", round(weight / (height * height), 2))
+# height = float(input("Input your height in Feet: "))
+# weight = float(input("Input your weight in Kilogram: "))
+# print("Your body mass index is: ", round(weight / (height * height), 2))
 
+
+#? Question
+#Write a Python program to calculate the sum of the digits in an integer.
+# #! Answer
+def foo(num):
+    total = 0
+    while num >= 10:
+        temp = num % 10
+        total += temp
+        num = num // 10
+    total +=num
+    print(total)
+foo(1235)
+foo(12)
+foo(100)
+foo(100045)
+foo(5245)
