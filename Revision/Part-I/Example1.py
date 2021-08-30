@@ -175,9 +175,17 @@
 # print(lcm(4, 6))
 # print(lcm(15, 17))
 
-#? Question 
-n = int(input("Input a number: "))
-sum_num = (n * (n + 1)) / 2
-print("Sum of the first", n ,"positive integers:", sum_num)
-
+# #? Question 
 #! Answer
+# n = int(input("Input a number: "))
+# sum_num = (n * (n + 1)) / 2
+# print("Sum of the first", n ,"positive integers:", sum_num)
+
+#? Question
+# Write a Python program to swap two variables.
+def swap(x,y):
+    temp = x
+    x = y
+    y = temp
+    return x,y
+print("Swapping:",swap(2,3))
