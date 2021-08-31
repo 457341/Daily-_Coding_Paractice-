@@ -183,9 +183,20 @@
 
 #? Question
 # Write a Python program to swap two variables.
-def swap(x,y):
-    temp = x
-    x = y
-    y = temp
-    return x,y
-print("Swapping:",swap(2,3))
+# ! Answer
+# def swap(x,y):
+#     temp = x
+#     x = y
+#     y = temp
+#     return x,y
+#? Question
+# Write a Python program to sort three integers without using conditional statements and loops.
+def sort_numbers(n1,n2,n3):
+    smallest = min(n1,n2,n3)
+    biggest = max(n1,n2,n3,n1)
+    middle = (n1+n2+n3) - smallest -biggest
+    return smallest,middle,biggest
+print(sort_numbers(1,5,2))
+print(sort_numbers(0,-1,10))
+
+#! Answer
