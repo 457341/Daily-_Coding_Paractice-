@@ -191,12 +191,49 @@
 #     return x,y
 #? Question
 # Write a Python program to sort three integers without using conditional statements and loops.
-def sort_numbers(n1,n2,n3):
-    smallest = min(n1,n2,n3)
-    biggest = max(n1,n2,n3,n1)
-    middle = (n1+n2+n3) - smallest -biggest
-    return smallest,middle,biggest
-print(sort_numbers(1,5,2))
-print(sort_numbers(0,-1,10))
-
 #! Answer
+# def sort_numbers(n1,n2,n3):
+#     smallest = min(n1,n2,n3)
+#     biggest = max(n1,n2,n3,n1)
+#     middle = (n1+n2+n3) - smallest -biggest
+#     return smallest,middle,biggest
+# print(sort_numbers(1,5,2))
+# print(sort_numbers(0,-1,10))
+
+#? Question
+# Write a Python program to concatenate N strings
+#! Answer
+def concatenate_strings(*strings):
+    concatenated_string = ""
+    for s in strings:
+        concatenated_string += s
+    return concatenated_string
+print(concatenate_strings("Manzoor","Hussain","Mughal"))
+
+# ? Question
+# Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary)
+# ! Answer
+# def sum(container):
+#     total = 0
+#     for c in container:
+#         total += c
+#     print(total)
+print(sum([1,2,3,4]))
+print(sum((1,2,3,4)))
+print(sum({1,2,3,4}))
+#? Question
+#  Write a Python program to test whether all numbers of a list is greater than a certain number
+#! Answer
+lst = [1,2,3,4]
+random_number = 3
+count = 0
+for i in lst:
+    if i > random_number:
+        count += 1
+if count == len(lst):
+    print("Certain number is greater than all numbers of a list")
+else:
+    print("Certain number is not greater than all numbers of a list")
+# in built function
+print(all( random_number > i for i in lst))
+print(all( 5 > i for i in lst))
