@@ -10,14 +10,14 @@
 # print(foo([1,1,3, 4, 5, 6, 7]))
 #? Question
 # Write a Python program to count the number of each character of a given text of a text file.
-f = open("text.txt", "r")
+# f = open("text.txt", "r")
 # print(f.read())
-str = "My name is manzoor"
-str = str.split()
-for s in str:
-    s = s.split()
-    print(s)
-print(str)
+# str = "My name is manzoor"
+# str = str.split()
+# for s in str:
+#     s = s.split()
+#     print(s)
+# print(str)
 #! Answer
 
 def remove_nums(int_list):
@@ -35,7 +35,7 @@ remove_nums(nums)
 # Write a Python program to find unique triplets whose three elements gives the sum of zero from an array of n integers.
 #! Answer
 def three_sum(nums):
-      result = []
+  result = []
   nums.sort()
   for i in range(len(nums)-2):
     if i> 0 and nums[i] == nums[i-1]:
@@ -61,3 +61,23 @@ def three_sum(nums):
 
 x = [1, -6, 4, 2, -1, 2, 0, -2, 0 ]
 print(three_sum(x))
+#? Question
+# Write a Python program to get the top stories from Google news.
+#! Answer
+import bs4
+from bs4 import BeautifulSoup as soup
+from urllib.request import urlopen
+
+news_url="https://news.google.com/news/rss"
+Client=urlopen(news_url)
+xml_page=Client.read()
+Client.close()
+
+soup_page=soup(xml_page,"xml")
+news_list=soup_page.findAll("item")
+# Print news title, url and publish date
+for news in news_list:
+  print(news.title.text)
+  print(news.link.text)
+  print(news.pubDate.text)
+  print("-"*60)
