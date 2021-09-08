@@ -86,9 +86,33 @@
 #? Question
 # Write a Python program to get a list of locally installed Python modules.
 #! Answer
-import pkg_resources
-installed_packages = pkg_resources.working_set
-installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
-     for i in installed_packages])
-for m in installed_packages_list:
-    print(m)
+# import pkg_resources
+# installed_packages = pkg_resources.working_set
+# installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
+#      for i in installed_packages])
+# for m in installed_packages_list:
+#     print(m)
+#? Question 
+# Write a Python program to display some information about the OS where the script is running.
+#! Answer
+import platform as pl
+
+os_profile = [
+        'architecture',
+        'linux_distribution',
+        'mac_ver',
+        'machine',
+        'node',
+        'platform',
+        'processor',
+        'python_build',
+        'python_compiler',
+        'python_version',
+        'release',
+        'system',
+        'uname',
+        'version',
+    ]
+for key in os_profile:
+  if hasattr(pl, key):
+    print(key +  ": " + str(getattr(pl, key)()))
