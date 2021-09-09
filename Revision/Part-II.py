@@ -95,24 +95,40 @@
 #? Question 
 # Write a Python program to display some information about the OS where the script is running.
 #! Answer
-import platform as pl
+# import platform as pl
 
-os_profile = [
-        'architecture',
-        'linux_distribution',
-        'mac_ver',
-        'machine',
-        'node',
-        'platform',
-        'processor',
-        'python_build',
-        'python_compiler',
-        'python_version',
-        'release',
-        'system',
-        'uname',
-        'version',
-    ]
-for key in os_profile:
-  if hasattr(pl, key):
-    print(key +  ": " + str(getattr(pl, key)()))
+# os_profile = [
+#         'architecture',
+#         'linux_distribution',
+#         'mac_ver',
+#         'machine',
+#         'node',
+#         'platform',
+#         'processor',
+#         'python_build',
+#         'python_compiler',
+#         'python_version',
+#         'release',
+#         'system',
+#         'uname',
+#         'version',
+#     ]
+# for key in os_profile:
+#   if hasattr(pl, key):
+#     print(key +  ": " + str(getattr(pl, key)()))
+#? Question
+# Write a Python program to create all possible permutations from a given collection of distinct numbers.
+#! Answer
+def permute(nums):
+  result_perms = [[]]
+  for n in nums:
+    new_perms = []
+    for perm in result_perms:
+      for i in range(len(perm)+1):
+        new_perms.append(perm[:i] + [n] + perm[i:])
+        result_perms = new_perms
+  return result_perms
+
+my_nums = [1,2,3]
+print("Original Cofllection: ",my_nums)
+print("Collection of distinct numbers:\n",permute(my_nums))
