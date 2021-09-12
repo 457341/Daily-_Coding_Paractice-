@@ -119,167 +119,101 @@
 #? Question
 # Write a Python program to create all possible permutations from a given collection of distinct numbers.
 #! Answer
-def permute(nums):
-  result_perms = [[]]
-  for n in nums:
-    new_perms = []
-    for perm in result_perms:
-      for i in range(len(perm)+1):
-        new_perms.append(perm[:i] + [n] + perm[i:])
-        result_perms = new_perms
-  return result_perms
+# def permute(nums):
+#   result_perms = [[]]
+#   for n in nums:
+#     new_perms = []
+#     for perm in result_perms:
+#       for i in range(len(perm)+1):
+#         new_perms.append(perm[:i] + [n] + perm[i:])
+#         result_perms = new_perms
+#   return result_perms
 
-my_nums = [1,2,3]
-print("Original Cofllection: ",my_nums)
-print("Collection of distinct numbers:\n",permute(my_nums))
-
-
-home
-Front End
-HTML
-CSS
-JavaScript
-HTML5
-Schema.org
-php.js
-Twitter Bootstrap
-Responsive Web Design tutorial
-Zurb Foundation 3 tutorials
-Pure CSS
-HTML5 Canvas
-JavaScript Course
-Icon
-Angular
-React
-Vue
-Jest
-Mocha
-NPM
-Yarn
-Back End
-PHP
-Python
-Java
-Node.js
-Ruby
-C programming
-PHP Composer
-Laravel
-PHPUnit
-ASP.NET
-Database
-SQL(2003 standard of ANSI)
-MySQL
-PostgreSQL
-SQLite
-NoSQL
-MongoDB
-Oracle
-Redis
-Apollo GraphQL
-API
-Google Plus API
-Youtube API
-Google Maps API
-Flickr API
-Last.fm API
-Twitter REST API
-Data Interchnage
-XML
-JSON
-Ajax
-Exercises
-HTML CSS Exercises
-JavaScript Exercises
-jQuery Exercises
-jQuery-UI Exercises
-CoffeeScript Exercises
-PHP Exercises
-Python Exercises
-C Programming Exercises
-C# Sharp Exercises
-Java Exercises
-SQL Exercises
-Oracle Exercises
-MySQL Exercises
-SQLite Exercises
-PostgreSQL Exercises
-MongoDB Exercises
-Twitter Bootstrap Examples
-Euler Project
-Others
-Excel Tutorials
-Useful tools
-Google Docs Forms Templates
-Google Docs Slide Presentations
-Number Conversions
-Linux Tutorials
-Quizzes
-Articles
-Python: Get all possible two digit letter combinations from a digit string
-Last update on February 26 2020 08:09:15 (UTC/GMT +8 hours)
-
- 
-Python Basic - 1: Exercise-13 with Solution
-Write a Python program to get all possible two digit letter combinations from a digit (1 to 9) string.
-
-string_maps = {
-"1": "abc",
-"2": "def",
-"3": "ghi",
-"4": "jkl",
-"5": "mno",
-"6": "pqrs",
-"7": "tuv",
-"8": "wxy",
-"9": "z"
-}
-def letter_combinations(digits):
-    if digits == "":
-        return []
-    string_maps = {
-        "1": "abc",
-        "2": "def",
-        "3": "ghi",
-        "4": "jkl",
-        "5": "mno",
-        "6": "pqrs",
-        "7": "tuv",
-        "8": "wxy",
-        "9": "z"
-    }
-    result = [""]
-    for num in digits:
-        temp = []
-        for an in result:
-            for char in string_maps[num]:
-                temp.append(an + char)
-        result = temp
-    return result
-
-digit_string = "47"
-print(letter_combinations(digit_string))
-digit_string = "29"
-print(letter_combinations(digit_string))
+# my_nums = [1,2,3]
+# print("Original Cofllection: ",my_nums)
+# print("Collection of distinct numbers:\n",permute(my_nums))
 
 
-from collections import deque
-import re
+# string_maps = {
+# "1": "abc",
+# "2": "def",
+# "3": "ghi",
+# "4": "jkl",
+# "5": "mno",
+# "6": "pqrs",
+# "7": "tuv",
+# "8": "wxy",
+# "9": "z"
+# }
+# def letter_combinations(digits):
+#     if digits == "":
+#         return []
+#     string_maps = {
+#         "1": "abc",
+#         "2": "def",
+#         "3": "ghi",
+#         "4": "jkl",
+#         "5": "mno",
+#         "6": "pqrs",
+#         "7": "tuv",
+#         "8": "wxy",
+#         "9": "z"
+#     }
+#     result = [""]
+#     for num in digits:
+#         temp = []
+#         for an in result:
+#             for char in string_maps[num]:
+#                 temp.append(an + char)
+#         result = temp
+#     return result
 
-__operators__ = "+-/*"
-__parenthesis__ = "()"
-__priority__ = {
-    '+': 0,
-    '-': 0,
-    '*': 1,
-    '/': 1,
-}
+# digit_string = "47"
+# print(letter_combinations(digit_string))
+# digit_string = "29"
+# print(letter_combinations(digit_string))
 
-def test_higher_priority(operator1, operator2):
-    return __priority__[operator1] >= __priority__[operator2]
 
-print(test_higher_priority('*','-'))
-print(test_higher_priority('+','-'))
-print(test_higher_priority('+','*'))
-print(test_higher_priority('+','/'))
-print(test_higher_priority('*','/'))
+# from collections import deque
+# import re
+
+# __operators__ = "+-/*"
+# __parenthesis__ = "()"
+# __priority__ = {
+#     '+': 0,
+#     '-': 0,
+#     '*': 1,
+#     '/': 1,
+# }
+
+# def test_higher_priority(operator1, operator2):
+#     return __priority__[operator1] >= __priority__[operator2]
+
+# print(test_higher_priority('*','-'))
+# print(test_higher_priority('+','-'))
+# print(test_higher_priority('+','*'))
+# print(test_higher_priority('+','/'))
+# print(test_higher_priority('*','/'))
+
+#? Question:
+# Write a Python program to find the median among three given numbers
+# ! Answer:
+x = input("Input the first number")
+y = input("Input the second number")
+z = input("Input the third number")
+print("Median of the above three numbers -")
+
+if y < x and x < z:
+    print(x)
+elif z < x and x < y:
+    print(x)
+    
+elif z < y and y < x:
+    print(y)
+elif x < y and y < z:
+    print(y)
+    
+elif y < z and z < x:
+    print(z)    
+elif x < z and z < y:
+    print(z)
