@@ -249,3 +249,4 @@ print("Number of common divisors: ",num_comm_div(2, 8))
 print("Number of common divisors: ",num_comm_div(12, 24))
 #? Question 
 #! Answer 
+#
