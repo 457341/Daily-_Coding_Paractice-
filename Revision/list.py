@@ -85,6 +85,12 @@ print("List after sorting(according to the last element of list): ",Question_6(q
 # 8. Write a Python program to check a list is empty or not. 
 
 #! Answer
+def is_empty(lst):
+    return len(lst) >=1
+empty_list = []
+non_empty_list = [1, 2, 3]
+print(is_empty(empty_list))
+print(is_empty(non_empty_list))
 #? Question
 # 9. Write a Python program to clone or copy a list. 
 
