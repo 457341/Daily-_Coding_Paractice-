@@ -80,6 +80,10 @@ print("List after sorting(according to the last element of list): ",Question_6(q
 
 #? Question
 # 7. Write a Python program to remove duplicates from a list. 
+#! Answer
+# def find_duplicate(lst):
+#     for i in lst:
+        
 # def Question_7()
 #? Question
 # 8. Write a Python program to check a list is empty or not. 
@@ -97,6 +101,14 @@ print(is_empty(non_empty_list))
 #! Answer
 #? Question
 # 10. Write a Python program to find the list of words that are longer than n from a given list of words. 
+def find_words(lst,n):
+    new_list = []
+    for i in lst:
+        if len(i) > n:
+            new_list.append(i)
+    return new_list
+print(find_words(['Manzoor','Hussain','OMU','ODTÜ'],5))
+
 
 #! Answer
 #? Question
