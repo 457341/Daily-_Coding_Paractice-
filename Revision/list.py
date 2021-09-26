@@ -114,7 +114,7 @@ print(find_words(['Manzoor','Hussain','OMU','ODTÜ'],5))
 #? Question
 # 11. Write a Python function that takes two lists and returns True if they have at least one common member. 
 #! Answer
-
+# 
 #? Question
 #! Answer
 # 12. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements. 
