@@ -120,3 +120,14 @@
 # 12. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements. 
 # Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 # Expected Output : ['Green', 'White', 'Black']
+#? Question
+# Write a Python program to find the number of divisors of a given integer is even or odd.
+#! 
+def divisor(n):
+    x = len([i for i in range(1,n+1) if not n % i])
+    return x
+print(divisor(15))
+print(divisor(12))
+print(divisor(9))
+print(divisor(6))
+print(divisor(3))
