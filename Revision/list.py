@@ -123,11 +123,20 @@
 #? Question
 # Write a Python program to find the number of divisors of a given integer is even or odd.
 #! 
-def divisor(n):
-    x = len([i for i in range(1,n+1) if not n % i])
-    return x
-print(divisor(15))
-print(divisor(12))
-print(divisor(9))
-print(divisor(6))
-print(divisor(3))
+# def divisor(n):
+#     x = len([i for i in range(1,n+1) if not n % i])
+#     return x
+# print(divisor(15))
+# print(divisor(12))
+# print(divisor(9))
+# print(divisor(6))
+# print(divisor(3))
+#? Question
+# 7. Write a Python program to remove duplicates from a list. 
+#! Answer
+def find_duplicate(lst):
+    for i in lst:
+        if lst.count(i) >1:
+            lst.remove(i)
+    return lst
+print(find_duplicate(['a', 'b', 'c','a','b']))
