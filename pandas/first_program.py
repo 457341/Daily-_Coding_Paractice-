@@ -18,3 +18,10 @@ names2 = pd.Series(['name1','name2','name3']) #? True
 print(names2.head())
 names3 = pd.Series(['name1','name2','name3'],name='Studets') # Putting column name
 print(names3.head())
+# Creating DataFrame 
+df = pd.DataFrame({'names':['name1','name2','name3'],'schools':['school1','school2','school3']})
+print(df.head())
+s = pd.Series(['s1','s2','s3'])
+print(s)
+df1 = pd.DataFrame({'column1':['r1','r2','r3','r4'],'column2':['r1','r2','r3','r4']})
+print(df1)
