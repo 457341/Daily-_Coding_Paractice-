@@ -40,3 +40,5 @@ print("Total rows in DataFrame: ",len(df3["name"]))
 # Write a Pandas program to select the rows where the score is missing, i.e. is NaN
 null_values_column = df3[df3["score"].isnull()]
 print(null_values_column)
+#select the rows the score is between 15 and 20 (inclusive).
+print(df3[df3['score'].between(15, 20)])
