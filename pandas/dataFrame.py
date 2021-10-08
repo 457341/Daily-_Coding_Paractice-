@@ -42,3 +42,4 @@ null_values_column = df3[df3["score"].isnull()]
 print(null_values_column)
 #select the rows the score is between 15 and 20 (inclusive).
 print(df3[df3['score'].between(15, 20)])
+###
