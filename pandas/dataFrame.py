@@ -42,4 +42,18 @@ null_values_column = df3[df3["score"].isnull()]
 print(null_values_column)
 #select the rows the score is between 15 and 20 (inclusive).
 print(df3[df3['score'].between(15, 20)])
-###
+
+# Deleting attempts columns
+df3.drop(['attempts'],axis=1,inplace=True)
+print(df3.head())
+# Adding new column
+print(len(df3['name']))
+df3['color'] = ['Red', 'Green', 'White', 'Black','Blue','Magenta','Yellow','YellowGreen','Orange','GreenYellow']
+print(df3.columns)
+# Iterating over rows
+for index, row in df3.iterrows():
+    print(row['name'],row['score'])
+
+# Rename Column Names
+df3.rename(columns={"name":"Ad","score":"Skor","color":"Renk","qualify":"Qualify"},inplace=True)
+print(df3.columns)
