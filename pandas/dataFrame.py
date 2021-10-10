@@ -57,3 +57,14 @@ for index, row in df3.iterrows():
 # Rename Column Names
 df3.rename(columns={"name":"Ad","score":"Skor","color":"Renk","qualify":"Qualify"},inplace=True)
 print(df3.columns)
+
+# Selectiong rows on the basis of same column values
+d = pd.DataFrame({'col1': [1, 4, 3, 4, 5], 'col2': [4, 5, 6, 7, 8], 'col3': [7, 8, 9, 0, 1]})
+print(d.loc[d['col1']==4])
+# Altering columns
+d = d[['col3','col2','col1']] 
+print(d.head())
+# Saving File as csv (Comma Separated File)
+d.to_csv('demo.csv')
+new_df = pd.read_csv('demo.csv',index_col=0)
+print(new_df.head())
