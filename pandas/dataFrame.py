@@ -68,3 +68,8 @@ print(d.head())
 d.to_csv('demo.csv')
 new_df = pd.read_csv('demo.csv',index_col=0)
 print(new_df.head())
+# combining two series
+s1 = pd.Series([1,2,3,4,5])
+s2 = pd.Series(['a', 'b', 'c', 'd', 'e'])
+concated = pd.concat([s1, s2],axis=1)
+print(concated.head())
