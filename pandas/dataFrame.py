@@ -73,3 +73,10 @@ s1 = pd.Series([1,2,3,4,5])
 s2 = pd.Series(['a', 'b', 'c', 'd', 'e'])
 concated = pd.concat([s1, s2],axis=1)
 print(concated.head())
+# Checking the Nan values in a dataframe
+print(d.isna().sum())
+# Dropping rows
+print(d.head())
+# dropping second row
+d.drop(d.index[[1,3]],inplace=True)
+print(d.head())
