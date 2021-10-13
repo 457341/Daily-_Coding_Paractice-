@@ -80,3 +80,4 @@ print(d.head())
 # dropping second row
 d.drop(d.index[[1,3]],inplace=True)
 print(d.head())
+#
