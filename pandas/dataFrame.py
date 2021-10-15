@@ -91,3 +91,10 @@ df = pd.DataFrame(r)
 print("Original DataFrame (string to datetime):")
 print(df)
 
+# df = df.loc[:, df.columns != 'col3']
+# print(df)
+print(d.columns)
+# print data set except specified columns
+dd = d.loc[:, d.columns != 'col3']
+print(dd)
+
