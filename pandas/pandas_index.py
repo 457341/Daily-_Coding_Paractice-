@@ -15,3 +15,8 @@ print(students)
 # if we want to change the index number, it must be any column
 print()
 print(students)
+
+# todo: Indexing using two columns
+print()
+students = students.set_index(['City','Class']) # Making two index
+print(students)
