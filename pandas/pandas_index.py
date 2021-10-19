@@ -20,3 +20,6 @@ print(students)
 print()
 students = students.set_index(['City','Class']) # Making two index
 print(students)
+# change the index name
+students.index.name = 'INDEX'
+print(students)
