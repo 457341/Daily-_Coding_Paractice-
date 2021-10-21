@@ -24,3 +24,4 @@ print(students)
 students.index.name = 'INDEX'
 print(students)
 #
+print('t4' in students.index.levels[0])
