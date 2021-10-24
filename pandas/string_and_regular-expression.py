@@ -13,5 +13,5 @@ print("\nRemove whitespace")
 print(s.str.strip())
 print("\nRemove left sided whitespace")
 print(s.str.lstrip())
-print("\nRemove Right sided whitespace")
-print(s.str.rstrip())
+
+#
