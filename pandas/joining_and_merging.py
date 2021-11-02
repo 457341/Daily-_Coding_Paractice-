@@ -1,17 +1,19 @@
 import pandas as pd
-student_data1 = pd.DataFrame({
-        'student_id': ['S1', 'S2', 'S3', 'S4', 'S5'],
-         'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'], 
-        'marks': [200, 210, 190, 222, 199]})
-
-student_data2 = pd.DataFrame({
-        'student_id': ['S4', 'S5', 'S6', 'S7', 'S8'],
-        'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'], 
-        'marks': [201, 200, 198, 219, 201]})
-
+data1 = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
+                     'key2': ['K0', 'K1', 'K0', 'K1'],
+                     'P': ['P0', 'P1', 'P2', 'P3'],
+                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']}) 
+data2 = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
+                      'key2': ['K0', 'K0', 'K0', 'K0'],
+                      'R': ['R0', 'R1', 'R2', 'R3'],
+                      'S': ['S0', 'S1', 'S2', 'S3']})
 print("Original DataFrames:")
-print(student_data1)
-print(student_data2)
-merged_data = pd.merge(student_data1, student_data2, on='student_id', how='outer')
-print("Merged data (outer join):")
+print(data1)
+print("--------------------")
+print(data2)
+print("\nMerged Data (keys from data1):")
+merged_data = pd.merge(data1, data2, how='left', on=['key1', 'key2'])
+print(merged_data)
+print("\nMerged Data (keys from data2):")
+merged_data = pd.merge(data2, data1, how='left', on=['key1', 'key2'])
 print(merged_data)
