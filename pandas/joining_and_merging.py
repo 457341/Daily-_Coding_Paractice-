@@ -1,16 +1,11 @@
 import pandas as pd
-data1 = pd.DataFrame({'A': ['A0', 'A1', 'A2'],
-                      'B': ['B0', 'B1', 'B2']},
-                     index=['K0', 'K1', 'K2'])
-
-data2 = pd.DataFrame({'C': ['C0', 'C2', 'C3'],
-                      'D': ['D0', 'D2', 'D3']},
-                     index=['K0', 'K2', 'K3'])
- 
+df1 = pd.DataFrame({'A': [None, 0, None], 'B': [3, 4, 5]})
+df2 = pd.DataFrame({'A': [1, 1, 3], 'B': [3, None, 3]})
+df1.combine_first(df2)
 print("Original DataFrames:")
-print(data1)
+print(df1)
 print("--------------------")
-print(data2)
-print("\nMerged Data (Joining on index):")
-result = data1.join(data2)
+print(df2)
+print("\nMerge two dataframes with different columns:")
+result = df1.combine_first(df2)
 print(result)
