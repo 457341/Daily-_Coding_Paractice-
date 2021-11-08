@@ -1,12 +1,16 @@
 import pandas as pd
-df1 = pd.DataFrame({'A': [None, 0, None], 'B': [3, 4, 5]})
-df2 = pd.DataFrame({'A': [1, 1, 3], 'B': [3, None, 3]})
-df1.combine_first(df2)
+data1 = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
+                     'key2': ['K0', 'K1', 'K0', 'K1'],
+                     'P': ['P0', 'P1', 'P2', 'P3'],
+                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']}) 
+data2 = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
+                      'key2': ['K0', 'K0', 'K0', 'K0'],
+                      'R': ['R0', 'R1', 'R2', 'R3'],
+                      'S': ['S0', 'S1', 'S2', 'S3']})
 print("Original DataFrames:")
-print(df1)
+print(data1)
 print("--------------------")
-print(df2)
+print(data2)
 print("\nMerge two dataframes with different columns:")
-result = df1.combine_first(df2)
-print(result)
+result = pd.concat([data1,data2], axis=0, ignore_index=True)
 print(result)
