@@ -1,10 +1,8 @@
-import pandas as pd
-#from datetime import datetime
-print("\nA specific date using timestamp:")
-print(pd.Timestamp('2016-11-10'))
-print("\nDate and time using timestamp:")
-print(pd.Timestamp('2012-05-03 11:30'))
-print("\nA time adds in the current local date using timestamp:")
-print(pd.Timestamp('11:30'))
-print("\nCurrent date and time using timestamp:")
-print(pd.Timestamp("now"))
+from datetime import datetime
+date1 = datetime(year=2020, month=12, day=25)
+print("Date from a given year, month, day:")
+print(date1)
+from dateutil import parser
+date2 = parser.parse("1st of January, 2021")
+print("\nDate from a given string formats:")
+print(date2)
