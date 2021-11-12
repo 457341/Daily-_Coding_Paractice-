@@ -1,8 +1,12 @@
-from datetime import datetime
-date1 = datetime(year=2020, month=12, day=25)
-print("Date from a given year, month, day:")
-print(date1)
-from dateutil import parser
-date2 = parser.parse("1st of January, 2021")
-print("\nDate from a given string formats:")
-print(date2)
+import pandas as pd
+import datetime
+from datetime import datetime, date
+today = datetime(2012, 10, 30)
+print("Current date:", today)
+tomorrow = today + pd.Timedelta(days=1)
+print("Tomorrow:", tomorrow)
+yesterday = today - pd.Timedelta(days=1)
+print("Yesterday:", yesterday)
+date1 = datetime(2016, 8, 2)
+date2 = datetime(2016, 7, 19)
+print("\nDifference between two dates: ",(date1 - date2))
