@@ -1,10 +1,12 @@
 import pandas as pd
-import numpy as np
-import datetime
-from datetime import datetime, date
-dates = [datetime(2011, 9, 1), datetime(2011, 9, 2)]
-print("Time-series with two index labels:")
-time_series = pd.Series(np.random.randn(2), dates)
-print(time_series)
-print("\nType of the index:")
-print(type(time_series.index))
+data = {\
+"year": [2002, 2003, 2015, 2018],
+"day_of_the_year": [250, 365, 1, 140]
+}
+df = pd.DataFrame(data)
+print("Original DataFrame:")
+print(df)
+df["combined"] = df["year"]*1000 + df["day_of_the_year"]
+df["date"] = pd.to_datetime(df["combined"], format = "%Y%j")
+print("\nNew DataFrame:")
+print(df)
