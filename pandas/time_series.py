@@ -1,10 +1,19 @@
 import pandas as pd
-dates1 = pd.to_datetime([1329806505, 129806505, 1249892905,
-                1249979305, 1250065705], unit='s')
-print("Convert integer or float epoch times to Timestamp and DatetimeIndex upto second:")
-print(dates1)
-print("\nConvert integer or float epoch times to Timestamp and DatetimeIndex upto milisecond:")
-dates2 = pd.to_datetime([1249720105100, 1249720105200, 1249720105300,
-                1249720105400, 1249720105500], unit='ms')
-print(dates2)
-print(dates2)
+from pandas.tseries.offsets import *
+import datetime
+from datetime import datetime, date
+dt = datetime(2020, 1, 4)
+print("Specified date:")
+print(dt)
+print("\nOne business day from the said date:")
+obday = dt + BusinessDay()
+print(obday)
+print("\nTwo business days from the said date:")
+tbday = dt + 2 * BusinessDay()
+print(tbday)
+print("\nThree business days from the said date:")
+thbday = dt + 3 * BusinessDay()
+print(thbday)
+print("\nNext business month end from the said date:")
+nbday = dt + BMonthEnd()
+print(nbday)
