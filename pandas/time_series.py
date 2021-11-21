@@ -1,19 +1,11 @@
 import pandas as pd
-from pandas.tseries.offsets import *
 import datetime
 from datetime import datetime, date
-dt = datetime(2020, 1, 4)
-print("Specified date:")
-print(dt)
-print("\nOne business day from the said date:")
-obday = dt + BusinessDay()
-print(obday)
-print("\nTwo business days from the said date:")
-tbday = dt + 2 * BusinessDay()
-print(tbday)
-print("\nThree business days from the said date:")
-thbday = dt + 3 * BusinessDay()
-print(thbday)
-print("\nNext business month end from the said date:")
-nbday = dt + BMonthEnd()
-print(nbday)
+sdt = datetime(2020, 1, 1)
+edt = datetime(2020, 12, 31)
+dateset = pd.period_range(sdt, edt, freq='M')
+print("All monthly boundaries of a given year:")
+print(dateset) 
+print("\nStart and end time for each period object in the said index:")
+for d in dateset: 
+    print ("{0} {1}".format(d.start_time, d.end_time)) 
