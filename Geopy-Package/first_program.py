@@ -1,17 +1,22 @@
 from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="geoapiExercises")
-ladd1 = "27488 Stanford Avenue, North Dakota"
-print("Location address:",ladd1)
-location = geolocator.geocode(ladd1)
-print("Street address, street name: ")
+state1 = "Uttar Pradesh"
+print("State Name:",state1)
+location = geolocator.geocode(state1)
+print("State Name/Country Name: ")
 print(location.address)
-ladd2 = "380 New York St, Redlands, CA 92373"
-print("\nLocation address:",ladd2)
-location = geolocator.geocode(ladd2)
-print("Street address, street name: ")
+state2 = " Illinois"
+print("\nState Name:",state2)
+location = geolocator.geocode(state2)
+print("State Name/Country Name: ")
 print(location.address)
-ladd3 = "1600 Pennsylvania Avenue NW"
-print("\nLocation address:",ladd3)
-location = geolocator.geocode(ladd3)
-print("Street address, street name: ")
+state3 = "Normandy"
+print("\nState Name:",state3)
+location = geolocator.geocode(state3)
+print("State Name/Country Name: ")
+print(location.address) 
+state4 = "Jerusalem District"
+print("\nState Name:",state4)
+location = geolocator.geocode(state4)
+print("State Name/Country Name: ")
 print(location.address)
