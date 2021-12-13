@@ -1,6 +1,7 @@
 # Write a Python program to append a list to the second list
 def append_list(list1,list2):
     print("")
+    print("")
 
     # list1.append(list2)
     # print(list1)
