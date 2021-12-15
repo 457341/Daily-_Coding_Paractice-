@@ -28,7 +28,7 @@ print(result)
 result = foo(3)
 print(result(15))
 # Write a Python program to sort a list of tuples using Lambda.
-# Original list of tuples:
+# Original list of tuples:c
 # [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
 # Sorting the List of Tuples:
 # [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]
@@ -66,3 +66,16 @@ print(even_list)
 
 odd_list = list(filter(lambda x: x % 2 != 0, int_list))
 print("Odd numbers: ",odd_list)
+
+# 6. Write a Python program to square and cube every number in a given list of integers using Lambda. Go to the editor
+# Original list of integers:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Square every number of the said list:
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# Cube every number of the said list:
+# [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+square_list = list(map(lambda x:x*x,lst))
+print("Square List:",square_list)
+cubic_list = list(map(lambda x:x*x*x,lst))
+print("Cubic List:",cubic_list)
