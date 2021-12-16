@@ -75,7 +75,7 @@ print("Odd numbers: ",odd_list)
 # Cube every number of the said list:
 # [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-square_list = list(map(lambda x:x*x,lst))
-print("Square List:",square_list)
-cubic_list = list(map(lambda x:x*x*x,lst))
-print("Cubic List:",cubic_list)
+square_lst = list(map(lambda x:x*x,lst))
+print("Square List",square_lst)
+cubic_lst = list(map(lambda x:x*x*x,lst))
+print("Cubic List",cubic_lst)
