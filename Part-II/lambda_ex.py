@@ -79,3 +79,26 @@ square_lst = list(map(lambda x:x*x,lst))
 print("Square List",square_lst)
 cubic_lst = list(map(lambda x:x*x*x,lst))
 print("Cubic List",cubic_lst)
+
+starts_with = lambda x: True if x.startswith('P') else False
+print(starts_with("Python"))
+print(starts_with("Java"))
+
+# . Write a Python program to extract year, month, date and time using Lambda. Go to the editor
+# Sample Output:
+# 2020-01-15 09:03:32.744178
+# 2020
+# 1
+# 15
+# 09:03:32.744178
+import datetime
+now = datetime.datetime.now()
+print(now)
+year = lambda x: x.year
+month = lambda x: x.month
+day = lambda x: x.day
+time = lambda x: x.time
+print(year(now))
+print(month(now))
+print(day(now))
+print(time(now))
