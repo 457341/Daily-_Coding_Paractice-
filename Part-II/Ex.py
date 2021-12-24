@@ -14,6 +14,5 @@ for i in range((len(nums)+1)//2, len(nums)):
     rvv = [0]*(len(mvv)-1)
     for j in range(len(rvv)):
         rvv[j] = max(mvv[j], mvv[j+1]) + nums[i][j]
-    mvv = rvv
-print("Maximum value of the sum of integers passing according to the rule on one line.") 
-print(mvv[0])
+    
+
