@@ -138,3 +138,11 @@ def divisible_by_digits(start_num, end_num):
     return [n for n in range(start_num, end_num+1) \
                 if not any(map(lambda x: int(x) == 0 or n%int(x) != 0, str(n)))]
 print(divisible_by_digits(1,22))
+
+# Find palindromes in a given list of strings using Lambda
+texts = ["php", "w3r", "Python", "abcd", "Java", "aaa"]
+print("Orginal list of strings:")
+print(texts) 
+result = list(filter(lambda x: (x == "".join(reversed(x))), texts)) 
+print("\nList of palindromes:")
+print(result) 
