@@ -167,3 +167,12 @@ numbers=sorted([int(x) for x in str_num if x.isdigit()])
 print('Numbers in sorted form:')
 for i in ((filter(lambda x:x>lenght,numbers))):
     print(i,end=' ')
+
+# Write a Python program that multiply each number of given list with a given number using lambda function. Print the result.
+nums = [2, 4, 6, 9 , 11]
+n = 2
+print("Original list: ", nums)
+print("Given number: ", n)
+filtered_numbers=list(map(lambda number:number*n,nums))
+print("Result:")
+print(' '.join(map(str,filtered_numbers)))
