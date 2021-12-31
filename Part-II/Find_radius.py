@@ -10,7 +10,6 @@ ar = a**0.5
 br = b**0.5
 cr = c**0.5 
 r = ar*br*cr / ((ar+br+cr)*(-ar+br+cr)*(ar-br+cr)*(ar+br-cr))**0.5
-print("Radius of the said circle:")
 print("{:>.3f}".format(r))
 print("Central coordinate (x, y) of the circle:")
 print("{:>.3f}".format(px),"{:>.3f}".format(py))
