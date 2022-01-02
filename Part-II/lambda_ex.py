@@ -194,3 +194,15 @@ print("\nList with maximum length of lists:")
 print(max_length_list(list1))
 print("\nList with minimum length of lists:")
 print(min_length_list(list1))
+
+# Write a Python program to remove all elements from a given list present in another list using lambda.
+def index_on_inner_list(list1, list2):
+    result = list(filter(lambda x: x not in list2, list1))
+    return result
+list1 = [1,2,3,4,5,6,7,8,9,10]
+list2 = [2,4,6,8]
+print("Original lists:")
+print("list1:", list1)
+print("list2:", list2)
+print("\nRemove all elements from 'list1' present in 'list2:")
+print(index_on_inner_list(list1, list2))
