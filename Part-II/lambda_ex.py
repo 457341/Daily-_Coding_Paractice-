@@ -206,3 +206,15 @@ print("list1:", list1)
 print("list2:", list2)
 print("\nRemove all elements from 'list1' present in 'list2:")
 print(index_on_inner_list(list1, list2))
+
+# Write a Python program to convert string element to integer inside a given tuple using lambda.
+
+
+def tuple_int_str(tuple_str):
+    result = tuple(map(lambda x: (int(x[0]), int(x[2])), tuple_str))
+    return result     
+tuple_str =  (('233', 'ABCD', '33'), ('1416', 'EFGH', '55'), ('2345', 'WERT', '34'))
+print("Original tuple values:")
+print(tuple_str)
+print("\nNew tuple values:")
+print(tuple_int_str(tuple_str))
