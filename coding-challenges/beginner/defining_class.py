@@ -8,7 +8,7 @@ class Person:
     
     def __init__(self, name = None):
         # self.name is the instance parameter
-        self.name = name
+        self.name = name 
 
 manzoor = Person("Manzoor")
 print("%s name is %s" % (Person.name, manzoor.name))

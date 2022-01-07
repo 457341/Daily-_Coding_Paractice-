@@ -17,6 +17,19 @@ print (total_number)
 # Using Python, write code that will read a file and return the number of capital letters.
 # Once you have your initial piece of code, see if you can condense into a one-liner.
 f = open("D:\Python (Don't break the chain)\Interview_Question\info.txt", 'r')
-print(f.readlines())
-for line in f:
+# print(f.read())
+text = f.read()
+print(text)
+print(type(text))
+text = text.split() #['My', 'Name', 'Is', 'Manzoor', 'Hussain.', 'I', 'Am', 'Writing', 'Code', 'In', 'Python.']
+print(type(text))
+print(text)
+count = 0
+for line in text:
+    line = list(line)
+    for l in line:
+        if l.isupper():
+            count +=1
+    # line = line.split() 
     print(line)
+print("Total capital letters: ",count)
