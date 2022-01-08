@@ -2,6 +2,7 @@
 # Input number of rows/columns (0 to exit)
 # 4
 # Input cell value:
+#
 # 25 69 51 26
 # 68 35 29 54
 # 54 57 45 63
