@@ -245,5 +245,5 @@ print("Original list with tuples:")
 print(class_students)
 print("\nMaximum and minimum values of the said list of tuples:")
 print(max_min_list_tuples(class_students))
-
+print(max_min_list_tuples(class_students))
 
