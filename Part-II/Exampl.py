@@ -10,3 +10,4 @@ print("Coded string: ",test(str))
 str = "JAVASCRIPT"
 print("\nOriginal string: ",str)
 print("Coded string: ",test(str))
+print("Coded string: ",test(str))
