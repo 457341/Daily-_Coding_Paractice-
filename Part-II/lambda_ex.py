@@ -247,3 +247,7 @@ print("\nMaximum and minimum values of the said list of tuples:")
 print(max_min_list_tuples(class_students))
 print(max_min_list_tuples(class_students))
 
+def max_min_list_tupless(class_students):
+    return_max = max(class_students,key=lambda item:item[1])[1]
+    return_min = min(class_students,key=lambda item:item[1])[1]
+    return return_max, return_min
