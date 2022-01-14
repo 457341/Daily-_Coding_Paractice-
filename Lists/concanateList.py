@@ -17,3 +17,4 @@ def concanate_list(list,size):
 list = ['p','q']
 size = random.randint(0,6) # Random size number generator
 concanate_list(list,size)
+concanate_list(list,size)
