@@ -3,10 +3,10 @@ def count_character(file):
     print()
 # import os
 
-# file1 = open("\\abc.txt","r")
-# for i in file1:
-#     i.split()
-#     print(i.read())
+file1 = open("\\abc.txt","r")
+for i in file1:
+    i.split()
+    print(i.read())
 
 
 # Python code to illustrate with()
