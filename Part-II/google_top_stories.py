@@ -9,7 +9,6 @@ Client.close()
 
 soup_page=soup(xml_page,"xml")
 news_list=soup_page.findAll("item")
-# Print news title, url and publish date
 for news in news_list:
   print(news.title.text)
   print(news.link.text)
