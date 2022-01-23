@@ -42,3 +42,5 @@ while True:
         for j in range(n + 1):
             print('{0:>5}'.format(x[i][j]), end="")
         print()
+        print()
+
