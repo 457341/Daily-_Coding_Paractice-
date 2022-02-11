@@ -18,5 +18,3 @@ def check_sum(nums, k):
     return False
 print(check_sum([12, 5, 0, 5], 10))
 print(check_sum([20, 20, 4, 5], 40))
-print(check_sum([1, -1], 0))
-print(check_sum([1, 1, 0], 0))
