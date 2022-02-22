@@ -12,5 +12,5 @@ def count_Primes_nums(n):
 
     return ctr
 
-print(count_Primes_nums(10))
-print(count_Primes_nums(100))
+print(count_Primes_nums(7))
+print(count_Primes_nums(1000))
