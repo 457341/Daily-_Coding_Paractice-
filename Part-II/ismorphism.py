@@ -25,4 +25,3 @@ print(isIsomorphic("paper", "title"));
 print(isIsomorphic("title", "paper"));
 print(isIsomorphic("apple", "orange"));
 print(isIsomorphic("aa", "ab"));
-print(isIsomorphic("ab", "aa"));
