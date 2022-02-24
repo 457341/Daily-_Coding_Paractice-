@@ -22,6 +22,3 @@ def isIsomorphic(str1, str2):
 print(isIsomorphic("foo", "bar"));         
 print(isIsomorphic("bar", "foo"));      
 print(isIsomorphic("paper", "title"));   
-print(isIsomorphic("title", "paper"));
-print(isIsomorphic("apple", "orange"));
-print(isIsomorphic("aa", "ab"));
