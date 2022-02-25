@@ -20,5 +20,4 @@ def isIsomorphic(str1, str2):
         return False
 
 print(isIsomorphic("foo", "bar"));         
-print(isIsomorphic("bar", "foo"));      
-print(isIsomorphic("paper", "title"));   
+print(isIsomorphic("bar", "foo"));        
