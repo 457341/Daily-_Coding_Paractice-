@@ -13,5 +13,4 @@ def longest_Common_Prefix(str1):
     return short_str 
 
 print(longest_Common_Prefix(["abcdefgh","abcefgh"]))
-print(longest_Common_Prefix(["w3r","w3resource"]))
 print(longest_Common_Prefix(["Python","PHP", "Perl"]))
