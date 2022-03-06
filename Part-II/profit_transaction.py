@@ -8,4 +8,4 @@ def max_profit(stock_price):
 			if  profit_amt > max_profit_amt:
 				max_profit_amt = profit_amt
 	return max_profit_amt
-print(max_profit([224, 236, 247, 258, 259, 225]))
+print(max_profit([224, 236, 247, 258, 259]))
