@@ -48,4 +48,3 @@ print("Modify items by index:")
 items[1] = "SQL"
 print("New value: ",items[1])
 items[4] = "Perl"
-print("New value: ",items[4])
