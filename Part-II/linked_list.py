@@ -41,7 +41,6 @@ items = singly_linked_list()
 items.append_item('PHP')
 items.append_item('Python')
 items.append_item('C#')
-items.append_item('Java')
 
 print("Modify items by index:")
 items[1] = "SQL"
