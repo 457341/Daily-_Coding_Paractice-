@@ -40,8 +40,6 @@ class singly_linked_list:
 items = singly_linked_list()
 items.append_item('PHP')
 items.append_item('Python')
-items.append_item('C#')
-
 print("Modify items by index:")
 items[1] = "SQL"
 print("New value: ",items[1])
